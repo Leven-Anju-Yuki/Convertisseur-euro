@@ -1,0 +1,72 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ec0000;
+    text-decoration: underline 2px black solid;
+}
+img{width: 10%;}
+.input-container {
+    width: 300px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-container select,
+.input-container input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#output {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#output h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Styles spécifiques pour les tablettes */
+@media only screen and (max-width: 991px) {
+    .input-container {
+        width: calc(100% - 20px);
+        margin-bottom: 15px;
+    }
+}
+
+/* Styles spécifiques pour les téléphones */
+@media only screen and (max-width: 767px) {
+    .input-container {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+    input[type="number"],
+    select {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+}

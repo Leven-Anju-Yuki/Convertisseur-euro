@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>convertisseur</title>
-  </head>
-  <body>
-    <h1>Conversion USD vers EUR</h1>
-    <label for="montantUSD">Montant en USD :</label>
-    <input type="text" id="montantUSD" />
-    <button id="convertir">Convertir</button>
-    <p id="resultat"></p>
-    <script src="./assets/script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Convertisseur de devises</title>
+    </head>
+    <body>
+        <h1>Convertisseur de devises</h1>
+        <div class="input-container">
+            <label for="montant">Montant :</label>
+            <input type="number" id="montant" placeholder="Entrez le montant" step="0.01" />
+        </div>
+        <div class="input-container">
+            <label for="devises">De :</label>
+            <select id="devises">
+                <option value="EUR">Euro (EUR)</option>
+                <option value="USD">Dollar américain (USD)</option>
+                <option value="GBP">Livre sterling (GBP)</option>
+                <option value="FRF">Franc français (FRF)</option>
+                <option value="JPY">Yen japonais (JPY)</option>
+                <option value="CNY">Yuan chinois (CNY)</option>
+            </select>
+        </div>
+        <div id="output"></div>
+        <footer>
+            <center><img src="./assets/image/bourse.png" alt="" /></center>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

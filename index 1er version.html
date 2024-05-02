@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="shortcut icon" type="image/png" href="./assets/image/bourse.png" />
+
+        <title>Convertisseur de devises</title>
+    </head>
+    <body>
+        <h1>Convertisseur de devises</h1>
+        <label for="montant">Montant :</label>
+        <input type="text" id="montant" />
+        <label for="devises">De :</label>
+        <select id="devises">
+            <option value="USD">Dollar américain (USD)</option>
+            <option value="GBP">Livre sterling (GBP)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="FRF">Franc français (FRF)</option>
+            <option value="JPY">Yen japonais (JPY)</option>
+            <option value="CNY">Yuan chinois (CNY)</option>
+        </select>
+        <label for="resultat">Vers :</label>
+        <select id="resultat">
+            <option value="USD">Dollar américain (USD)</option>
+            <option value="GBP">Livre sterling (GBP)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="FRF">Franc français (FRF)</option>
+            <option value="JPY">Yen japonais (JPY)</option>
+            <option value="CNY">Yuan chinois (CNY)</option>
+        </select>
+        <button id="convertir">Convertir</button>
+        <p id="output"></p>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
